@@ -127,11 +127,12 @@ button{
 }	
 #onlyeve{
     text-align: center;
+    color: rgba(23, 161, 195, 0.953);
 }
 #top{
     padding-top: 40px;
-    font-size: 5em;
-    line-height: 60px;
+    font-size: 6em;
+    line-height: 75px;
     color: transparent;
     -webkit-text-stroke: 1px rgb(41, 127, 197);
     background: url(back.png);
@@ -146,4 +147,53 @@ button{
     100%{
         background-position: 2000px 0;;
     }
+}
+.pop{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 2;
+}
+.pop:target{
+    visibility: visible;
+    opacity: 1;
+}
+.popupcontent{
+    position: relative;
+    background: rgba(0, 0, 0, 0.914);
+    width: 70%;
+    max-width: 100%;
+    padding: 1em 2em;
+    border-radius: 4px;
+    color: #ffffff;
+}
+.popupclose{
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color: #ffffff;
+    width: 20px;
+    height: 20px;
+}
+h2{
+    text-align: center;
+}
+.dis{
+    padding-top: 20px;
+    z-index: 1;
+}
+#img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
