@@ -1,1036 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@500&display=swap" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="home.css">
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <script src="https://kit.fontawesome.com/97a5d76f85.js" crossorigin="anonymous"></script>
-        <title>Home</title>
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-    </head>
-    <body>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
 
- <section id="title">
-    <!-- nav bar for other pages -->
+    <title>SNDT ACM STUDENT'S CHAPTER</title>
+    <style>
     
-  <div class="container1">
-    <nav class="navbar navbar-expand-lg navbar-dark bg">
-      <div class="container-fluid">
-        <img src="Acm logo.png" width="90px" height="50px">
-        <a class="navbar-brand" href="#">SNDT ACM Students' Chapter</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#footer">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="aboutus.html">About Us!</a>
-              </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#pricing">Council</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href= "card.html">Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href= "gallery.html">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href= "#cta">Newsletter</a>
-            </li>
-          </ul>
-        </div>
+      .container-1 {
+        background-image :url(/backg.jpg);
+        width: 100%;
+        height:50vh;
+        color:#fff ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        }   
+        .container-1 h1{
+          font-size:40px;
+          font-weight:500;
+        }
+
+        .container-2{
+          padding:40px;
+          padding-top:20px;
+        }
+      
+.footer-dark {
+  padding:50px 0;
+  color:#f0f9ff;
+  background-color:#282d32;
+}
+
+.footer-dark h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:16px;
+}
+
+.footer-dark ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
+}
+
+.footer-dark ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.6;
+}
+
+.footer-dark ul a:hover {
+  opacity:0.8;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item:not(.social) {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+
+.footer-dark .item.text {
+  margin-bottom:36px;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item.text {
+    margin-bottom:0;
+  }
+}
+
+.footer-dark .item.text p {
+  opacity:0.6;
+  margin-bottom:0;
+}
+
+.footer-dark .item.social {
+  text-align:center;
+}
+
+@media (max-width:991px) {
+  .footer-dark .item.social {
+    text-align:center;
+    margin-top:20px;
+  }
+}
+
+.footer-dark .item.social > a {
+  font-size:20px;
+  width:36px;
+  height:36px;
+  line-height:36px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+  margin:0 8px;
+  color:#fff;
+  opacity:0.75;
+}
+
+.footer-dark .item.social > a:hover {
+  opacity:0.9;
+}
+
+.footer-dark .copyright {
+  text-align:center;
+  padding-top:24px;
+  opacity:0.3;
+  font-size:13px;
+  margin-bottom:0;
+}
+.container-2{
+    background-image: url(/acm\ desktopcta.jpg);
+    opacity:1.0;
+    width:100%;
+}
+
+
+    </style>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <img src="ACM LOGO.png" alt="#" height="25px" />
+      <a class="navbar-brand navbar-light" href="#"> SNDT ACM STUDENT'S CHAPTER </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span> 
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only"> </span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#"> About </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#"> Our council </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./Gallery .html"> Gallery </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#"> Events </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#"> Newsletter </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#"> Contact us </a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
       </div>
     </nav>
-  </section>
-</div>
 
-    <!-- header page -->
-   <section id="top-block">
-    <div class="tops">
-        <h1>MAIN PAGE</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos corporis, itaque blanditiis ipsum fugit molestiae accusamus ea non facere iusto quo voluptas consequatur quisquam aperiam esse laborum facilis quia laboriosam rerum explicabo veritatis perspiciatis! Quod quis repudiandae molestiae totam nulla! Tenetur, fugit commodi quaerat beatae ratione accusantium repudiandae, nesciunt omnis odio culpa officiis deleniti quia nisi veniam nihil sunt cum. Nihil commodi alias ullam praesentium minima porro quibusdam nulla soluta ut. Numquam, cumque consectetur. Officia, iure et repellendus saepe reprehenderit quia itaque unde, eius deserunt perferendis repellat dolorem dolore quasi modi laboriosam eveniet aliquam libero earum quis debitis, hic quod in. Iure dolorum ratione vel nesciunt odio, ducimus tempore praesentium, ea accusantium itaque modi vero voluptate architecto natus quae! Magni porro explicabo dolore nobis laborum ratione, expedita recusandae inventore commodi sunt voluptatum officiis veniam quisquam, id ex sed, consequuntur atque! Similique nemo esse dolorum tenetur laudantium ut officiis voluptatibus iure veniam. Odio necessitatibus soluta architecto quaerat numquam non labore minima aspernatur modi tenetur quo vero asperiores eum, deleniti accusamus recusandae quos! Neque eveniet blanditiis excepturi dicta dolores ullam temporibus vitae illum vel mollitia numquam quo animi veniam adipisci nobis amet tempora at cum officiis, deleniti illo libero doloribus recusandae expedita! Itaque, omnis praesentium quo qui dolor dolores magnam impedit, eaque ab repellat illo voluptas earum. Officiis cumque fuga quo iure quis incidunt consequuntur eaque praesentium, consectetur nisi recusandae deleniti modi temporibus ad eum, esse perspiciatis saepe rerum asperiores expedita suscipit tempore minima. Accusantium illo eius velit recusandae hic quis in blanditiis labore assumenda cupiditate. Nulla quos quidem voluptas quasi sed cupiditate culpa, iure ipsa doloribus cum eum laudantium sapiente ipsam excepturi ratione, ullam quibusdam obcaecati odio nesciunt! Doloribus molestias, aliquid aspernatur quae quam, quo expedita odit, blanditiis eligendi error ducimus? Dolores suscipit temporibus quis est maiores, assumenda quaerat iusto. Autem.</p>
+    <div class="container-1">
+      <h1> <i> "TECHNOLOGY</i> <span class="auto-type"></span>
+      </h1>
     </div>
-   </section>
+    <hr>
+    <div class="container-2">
+    <div class="card border-dark mb-3" style="max-width: 100rem;">
+      <div class="card-header" style="text-align:center"> BENEFITS OF ACM </div>
+      <div class="card-body text-dark">
+        <h5 class="card-title"></h5>
+        <p class="card-text">
+        
+     
+        Individuals who are members of Chapters are known as ACM Chapter Members; ACM Chapter Members are eligible for the following set of member benefits:
+        <br>
 
-   <!--Backgroud-->
+        <b> Complimentary Subscription to Communications </b>- Chapter Members are eligible for a three-month complimentary electronic subscription to ACM’s flagship publication Communications of the ACM. 
+        <br>
+        <b> acm.org email address </b> – Chapter members are eligible for an “acm.org” email forwarding address with filtering.
+        <br>
+        <b> Receipt of ACM’s Popular E-Newsletters </b> – TechNews, the latest news in computing, 3x weekly; CareerNews, the latest career and industry news, bi-monthly; and MemberNet, all about ACM people and events monthly.
+        <br>
+        A full-year electronic subscription to XRDS, ACM's Student Magazine
+        ACM Student Quick Takes (SQT) a quarterly email newsletter with each issue highlighting ACM activities, programs, and offerings of interest.
+        </p>
+    </div>
+      </div>
+    </div>
 
-   <section id="back">
-    <div class="row">
-     <div>   
-<i class="fa-brands fa-github"></i>
-<i class="fa-solid fa-face-awesome"></i>
-<i class="fa-brands fa-google"></i>
-<i class="fa-brands fa-bootstrap"></i>
-<i class="fa-solid fa-computer-classic"></i>
-<i class="fa-solid fa-window"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-sharp fa-solid fa-people-group"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-microchip"></i>
-<i class="fa-solid fa-building-columns"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-java"></i>
-<i class="fa-solid fa-book"></i>
-<i class="fa-sharp fa-solid fa-lightbulb"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-sharp fa-solid fa-binary"></i>
-<i class="fa-solid fa-handshake"></i>
-<i class="fa-solid fa-brackets-curly"></i>
-</div>
-<div>
-    <i class="fa-brands fa-github"></i>
-    <i class="fa-solid fa-face-awesome"></i>
-    <i class="fa-brands fa-google"></i>
-    <i class="fa-brands fa-bootstrap"></i>
-    <i class="fa-solid fa-computer-classic"></i>
-    <i class="fa-solid fa-window"></i>
-    <i class="fa-solid fa-code"></i>
-    <i class="fa-sharp fa-solid fa-people-group"></i>
-    <i class="fa-brands fa-python"></i>
-    <i class="fa-solid fa-microchip"></i>
-    <i class="fa-solid fa-building-columns"></i>
-    <i class="fa-brands fa-twitter"></i>
-    <i class="fa-brands fa-html5"></i>
-    <i class="fa-brands fa-java"></i>
-    <i class="fa-solid fa-book"></i>
-    <i class="fa-sharp fa-solid fa-lightbulb"></i>
-    <i class="fa-brands fa-microsoft"></i>
-    <i class="fa-sharp fa-solid fa-binary"></i>
-    <i class="fa-solid fa-handshake"></i>
-    <i class="fa-solid fa-brackets-curly"></i>   
-</div>
-</div>
-<div class="row">
-<div>   
-<i class="fa-brands fa-github"></i>
-<i class="fa-solid fa-face-awesome"></i>
-<i class="fa-brands fa-google"></i>
-<i class="fa-brands fa-bootstrap"></i>
-<i class="fa-solid fa-computer-classic"></i>
-<i class="fa-solid fa-window"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-sharp fa-solid fa-people-group"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-microchip"></i>
-<i class="fa-solid fa-building-columns"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-java"></i>
-<i class="fa-solid fa-book"></i>
-<i class="fa-sharp fa-solid fa-lightbulb"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-sharp fa-solid fa-binary"></i>
-<i class="fa-solid fa-handshake"></i>
-<i class="fa-solid fa-brackets-curly"></i>
-</div>
-<div>
-<i class="fa-brands fa-github"></i>
-<i class="fa-solid fa-face-awesome"></i>
-<i class="fa-brands fa-google"></i>
-<i class="fa-brands fa-bootstrap"></i>
-<i class="fa-solid fa-computer-classic"></i>
-<i class="fa-solid fa-window"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-sharp fa-solid fa-people-group"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-microchip"></i>
-<i class="fa-solid fa-building-columns"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-java"></i>
-<i class="fa-solid fa-book"></i>
-<i class="fa-sharp fa-solid fa-lightbulb"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-sharp fa-solid fa-binary"></i>
-<i class="fa-solid fa-handshake"></i>
-<i class="fa-solid fa-brackets-curly"></i>   
-</div>
-</div>
-<div class="row">
-<div>   
-<i class="fa-brands fa-github fa"></i>
-<i class="fa-solid fa-face-awesome"></i>
-<i class="fa-brands fa-google"></i>
-<i class="fa-brands fa-bootstrap"></i>
-<i class="fa-solid fa-computer-classic"></i>
-<i class="fa-solid fa-window"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-sharp fa-solid fa-people-group"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-microchip"></i>
-<i class="fa-solid fa-building-columns"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-java"></i>
-<i class="fa-solid fa-book"></i>
-<i class="fa-sharp fa-solid fa-lightbulb"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-sharp fa-solid fa-binary"></i>
-<i class="fa-solid fa-handshake"></i>
-<i class="fa-solid fa-brackets-curly"></i>
-</div>
-<div>
-<i class="fa-brands fa-github"></i>
-<i class="fa-solid fa-face-awesome"></i>
-<i class="fa-brands fa-google"></i>
-<i class="fa-brands fa-bootstrap"></i>
-<i class="fa-solid fa-computer-classic"></i>
-<i class="fa-solid fa-window"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-sharp fa-solid fa-people-group"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-microchip"></i>
-<i class="fa-solid fa-building-columns"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-java"></i>
-<i class="fa-solid fa-book"></i>
-<i class="fa-sharp fa-solid fa-lightbulb"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-sharp fa-solid fa-binary"></i>
-<i class="fa-solid fa-handshake"></i>
-<i class="fa-solid fa-brackets-curly"></i>   
-</div>
-</div>
-<div class="row">
-<div>   
-<i class="fa-brands fa-github"></i>
-<i class="fa-solid fa-face-awesome"></i>
-<i class="fa-brands fa-google"></i>
-<i class="fa-brands fa-bootstrap"></i>
-<i class="fa-solid fa-computer-classic"></i>
-<i class="fa-solid fa-window"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-sharp fa-solid fa-people-group"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-microchip"></i>
-<i class="fa-solid fa-building-columns"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-java"></i>
-<i class="fa-solid fa-book"></i>
-<i class="fa-sharp fa-solid fa-lightbulb"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-sharp fa-solid fa-binary"></i>
-<i class="fa-solid fa-handshake"></i>
-<i class="fa-solid fa-brackets-curly"></i>
-</div>
-<div>
-<i class="fa-brands fa-github"></i>
-<i class="fa-solid fa-face-awesome"></i>
-<i class="fa-brands fa-google"></i>
-<i class="fa-brands fa-bootstrap"></i>
-<i class="fa-solid fa-computer-classic"></i>
-<i class="fa-solid fa-window"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-sharp fa-solid fa-people-group"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-microchip"></i>
-<i class="fa-solid fa-building-columns"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-java"></i>
-<i class="fa-solid fa-book"></i>
-<i class="fa-sharp fa-solid fa-lightbulb"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-sharp fa-solid fa-binary"></i>
-<i class="fa-solid fa-handshake"></i>
-<i class="fa-solid fa-brackets-curly"></i>   
-</div>
-</div>
-<div class="row">
-<div>   
-<i class="fa-brands fa-github"></i>
-<i class="fa-solid fa-face-awesome"></i>
-<i class="fa-brands fa-google"></i>
-<i class="fa-brands fa-bootstrap"></i>
-<i class="fa-solid fa-computer-classic"></i>
-<i class="fa-solid fa-window"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-sharp fa-solid fa-people-group"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-microchip"></i>
-<i class="fa-solid fa-building-columns"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-java"></i>
-<i class="fa-solid fa-book"></i>
-<i class="fa-sharp fa-solid fa-lightbulb"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-sharp fa-solid fa-binary"></i>
-<i class="fa-solid fa-handshake"></i>
-<i class="fa-solid fa-brackets-curly"></i>
-</div>
-<div>
-<i class="fa-brands fa-github"></i>
-<i class="fa-solid fa-face-awesome"></i>
-<i class="fa-brands fa-google"></i>
-<i class="fa-brands fa-bootstrap"></i>
-<i class="fa-solid fa-computer-classic"></i>
-<i class="fa-solid fa-window"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-sharp fa-solid fa-people-group"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-microchip"></i>
-<i class="fa-solid fa-building-columns"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-java"></i>
-<i class="fa-solid fa-book"></i>
-<i class="fa-sharp fa-solid fa-lightbulb"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-sharp fa-solid fa-binary"></i>
-<i class="fa-solid fa-handshake"></i>
-<i class="fa-solid fa-brackets-curly"></i>   
-</div>
-</div>
-<div class="row">
-<div>   
-<i class="fa-brands fa-github"></i>
-<i class="fa-solid fa-face-awesome"></i>
-<i class="fa-brands fa-google"></i>
-<i class="fa-brands fa-bootstrap"></i>
-<i class="fa-solid fa-computer-classic"></i>
-<i class="fa-solid fa-window"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-sharp fa-solid fa-people-group"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-microchip"></i>
-<i class="fa-solid fa-building-columns"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-java"></i>
-<i class="fa-solid fa-book"></i>
-<i class="fa-sharp fa-solid fa-lightbulb"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-sharp fa-solid fa-binary"></i>
-<i class="fa-solid fa-handshake"></i>
-<i class="fa-solid fa-brackets-curly"></i>
-</div>
-<div>
-<i class="fa-brands fa-github"></i>
-<i class="fa-solid fa-face-awesome"></i>
-<i class="fa-brands fa-google"></i>
-<i class="fa-brands fa-bootstrap"></i>
-<i class="fa-solid fa-computer-classic"></i>
-<i class="fa-solid fa-window"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-sharp fa-solid fa-people-group"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-microchip"></i>
-<i class="fa-solid fa-building-columns"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-java"></i>
-<i class="fa-solid fa-book"></i>
-<i class="fa-sharp fa-solid fa-lightbulb"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-sharp fa-solid fa-binary"></i>
-<i class="fa-solid fa-handshake"></i>
-<i class="fa-solid fa-brackets-curly"></i>   
-</div>
-</div>
-<div class="row">
-<div>   
-<i class="fa-brands fa-github"></i>
-<i class="fa-solid fa-face-awesome"></i>
-<i class="fa-brands fa-google"></i>
-<i class="fa-brands fa-bootstrap"></i>
-<i class="fa-solid fa-computer-classic"></i>
-<i class="fa-solid fa-window"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-sharp fa-solid fa-people-group"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-microchip"></i>
-<i class="fa-solid fa-building-columns"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-java"></i>
-<i class="fa-solid fa-book"></i>
-<i class="fa-sharp fa-solid fa-lightbulb"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-sharp fa-solid fa-binary"></i>
-<i class="fa-solid fa-handshake"></i>
-<i class="fa-solid fa-brackets-curly"></i>
-</div>
-<div>
-<i class="fa-brands fa-github"></i>
-<i class="fa-solid fa-face-awesome"></i>
-<i class="fa-brands fa-google"></i>
-<i class="fa-brands fa-bootstrap"></i>
-<i class="fa-solid fa-computer-classic"></i>
-<i class="fa-solid fa-window"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-sharp fa-solid fa-people-group"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-microchip"></i>
-<i class="fa-solid fa-building-columns"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-java"></i>
-<i class="fa-solid fa-book"></i>
-<i class="fa-sharp fa-solid fa-lightbulb"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-sharp fa-solid fa-binary"></i>
-<i class="fa-solid fa-handshake"></i>
-<i class="fa-solid fa-brackets-curly"></i>   
-</div>
-</div>
-<div class="row">
-<div>   
-<i class="fa-brands fa-github"></i>
-<i class="fa-solid fa-face-awesome"></i>
-<i class="fa-brands fa-google"></i>
-<i class="fa-brands fa-bootstrap"></i>
-<i class="fa-solid fa-computer-classic"></i>
-<i class="fa-solid fa-window"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-sharp fa-solid fa-people-group"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-microchip"></i>
-<i class="fa-solid fa-building-columns"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-java"></i>
-<i class="fa-solid fa-book"></i>
-<i class="fa-sharp fa-solid fa-lightbulb"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-sharp fa-solid fa-binary"></i>
-<i class="fa-solid fa-handshake"></i>
-<i class="fa-solid fa-brackets-curly"></i>
-</div>
-<div>
-<i class="fa-brands fa-github"></i>
-<i class="fa-solid fa-face-awesome"></i>
-<i class="fa-brands fa-google"></i>
-<i class="fa-brands fa-bootstrap"></i>
-<i class="fa-solid fa-computer-classic"></i>
-<i class="fa-solid fa-window"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-sharp fa-solid fa-people-group"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-microchip"></i>
-<i class="fa-solid fa-building-columns"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-java"></i>
-<i class="fa-solid fa-book"></i>
-<i class="fa-sharp fa-solid fa-lightbulb"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-sharp fa-solid fa-binary"></i>
-<i class="fa-solid fa-handshake"></i>
-<i class="fa-solid fa-brackets-curly"></i>   
-</div>
-</div>
-<div class="row">
-<div>   
-<i class="fa-brands fa-github"></i>
-<i class="fa-solid fa-face-awesome"></i>
-<i class="fa-brands fa-google"></i>
-<i class="fa-brands fa-bootstrap"></i>
-<i class="fa-solid fa-computer-classic"></i>
-<i class="fa-solid fa-window"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-sharp fa-solid fa-people-group"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-microchip"></i>
-<i class="fa-solid fa-building-columns"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-java"></i>
-<i class="fa-solid fa-book"></i>
-<i class="fa-sharp fa-solid fa-lightbulb"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-sharp fa-solid fa-binary"></i>
-<i class="fa-solid fa-handshake"></i>
-<i class="fa-solid fa-brackets-curly"></i>
-</div>
-<div>
-<i class="fa-brands fa-github"></i>
-<i class="fa-solid fa-face-awesome"></i>
-<i class="fa-brands fa-google"></i>
-<i class="fa-brands fa-bootstrap"></i>
-<i class="fa-solid fa-computer-classic"></i>
-<i class="fa-solid fa-window"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-sharp fa-solid fa-people-group"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-microchip"></i>
-<i class="fa-solid fa-building-columns"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-java"></i>
-<i class="fa-solid fa-book"></i>
-<i class="fa-sharp fa-solid fa-lightbulb"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-sharp fa-solid fa-binary"></i>
-<i class="fa-solid fa-handshake"></i>
-<i class="fa-solid fa-brackets-curly"></i>   
-</div>
-</div>
-<div class="row">
-<div>   
-<i class="fa-brands fa-github"></i>
-<i class="fa-solid fa-face-awesome"></i>
-<i class="fa-brands fa-google"></i>
-<i class="fa-brands fa-bootstrap"></i>
-<i class="fa-solid fa-computer-classic"></i>
-<i class="fa-solid fa-window"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-sharp fa-solid fa-people-group"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-microchip"></i>
-<i class="fa-solid fa-building-columns"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-java"></i>
-<i class="fa-solid fa-book"></i>
-<i class="fa-sharp fa-solid fa-lightbulb"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-sharp fa-solid fa-binary"></i>
-<i class="fa-solid fa-handshake"></i>
-<i class="fa-solid fa-brackets-curly"></i>
-</div>
-<div>
-<i class="fa-brands fa-github"></i>
-<i class="fa-solid fa-face-awesome"></i>
-<i class="fa-brands fa-google"></i>
-<i class="fa-brands fa-bootstrap"></i>
-<i class="fa-solid fa-computer-classic"></i>
-<i class="fa-solid fa-window"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-sharp fa-solid fa-people-group"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-microchip"></i>
-<i class="fa-solid fa-building-columns"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-java"></i>
-<i class="fa-solid fa-book"></i>
-<i class="fa-sharp fa-solid fa-lightbulb"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-sharp fa-solid fa-binary"></i>
-<i class="fa-solid fa-handshake"></i>
-<i class="fa-solid fa-brackets-curly"></i>   
-</div>
-</div>
-<div class="row">
-<div>   
-<i class="fa-brands fa-github"></i>
-<i class="fa-solid fa-face-awesome"></i>
-<i class="fa-brands fa-google"></i>
-<i class="fa-brands fa-bootstrap"></i>
-<i class="fa-solid fa-computer-classic"></i>
-<i class="fa-solid fa-window"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-sharp fa-solid fa-people-group"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-microchip"></i>
-<i class="fa-solid fa-building-columns"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-java"></i>
-<i class="fa-solid fa-book"></i>
-<i class="fa-sharp fa-solid fa-lightbulb"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-sharp fa-solid fa-binary"></i>
-<i class="fa-solid fa-handshake"></i>
-<i class="fa-solid fa-brackets-curly"></i>
-</div>
-<div>
-<i class="fa-brands fa-github"></i>
-<i class="fa-solid fa-face-awesome"></i>
-<i class="fa-brands fa-google"></i>
-<i class="fa-brands fa-bootstrap"></i>
-<i class="fa-solid fa-computer-classic"></i>
-<i class="fa-solid fa-window"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-sharp fa-solid fa-people-group"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-microchip"></i>
-<i class="fa-solid fa-building-columns"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-java"></i>
-<i class="fa-solid fa-book"></i>
-<i class="fa-sharp fa-solid fa-lightbulb"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-sharp fa-solid fa-binary"></i>
-<i class="fa-solid fa-handshake"></i>
-<i class="fa-solid fa-brackets-curly"></i>   
-</div>
-</div>
-<div class="row">
-<div>   
-<i class="fa-brands fa-github"></i>
-<i class="fa-solid fa-face-awesome"></i>
-<i class="fa-brands fa-google"></i>
-<i class="fa-brands fa-bootstrap"></i>
-<i class="fa-solid fa-computer-classic"></i>
-<i class="fa-solid fa-window"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-sharp fa-solid fa-people-group"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-microchip"></i>
-<i class="fa-solid fa-building-columns"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-java"></i>
-<i class="fa-solid fa-book"></i>
-<i class="fa-sharp fa-solid fa-lightbulb"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-sharp fa-solid fa-binary"></i>
-<i class="fa-solid fa-handshake"></i>
-<i class="fa-solid fa-brackets-curly"></i>
-</div>
-<div>
-<i class="fa-brands fa-github"></i>
-<i class="fa-solid fa-face-awesome"></i>
-<i class="fa-brands fa-google"></i>
-<i class="fa-brands fa-bootstrap"></i>
-<i class="fa-solid fa-computer-classic"></i>
-<i class="fa-solid fa-window"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-sharp fa-solid fa-people-group"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-microchip"></i>
-<i class="fa-solid fa-building-columns"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-java"></i>
-<i class="fa-solid fa-book"></i>
-<i class="fa-sharp fa-solid fa-lightbulb"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-sharp fa-solid fa-binary"></i>
-<i class="fa-solid fa-handshake"></i>
-<i class="fa-solid fa-brackets-curly"></i>   
-</div>
-</div>
-<div class="row">
-<div>   
-<i class="fa-brands fa-github"></i>
-<i class="fa-solid fa-face-awesome"></i>
-<i class="fa-brands fa-google"></i>
-<i class="fa-brands fa-bootstrap"></i>
-<i class="fa-solid fa-computer-classic"></i>
-<i class="fa-solid fa-window"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-sharp fa-solid fa-people-group"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-microchip"></i>
-<i class="fa-solid fa-building-columns"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-java"></i>
-<i class="fa-solid fa-book"></i>
-<i class="fa-sharp fa-solid fa-lightbulb"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-sharp fa-solid fa-binary"></i>
-<i class="fa-solid fa-handshake"></i>
-<i class="fa-solid fa-brackets-curly"></i>
-</div>
-<div>
-<i class="fa-brands fa-github"></i>
-<i class="fa-solid fa-face-awesome"></i>
-<i class="fa-brands fa-google"></i>
-<i class="fa-brands fa-bootstrap"></i>
-<i class="fa-solid fa-computer-classic"></i>
-<i class="fa-solid fa-window"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-sharp fa-solid fa-people-group"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-microchip"></i>
-<i class="fa-solid fa-building-columns"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-java"></i>
-<i class="fa-solid fa-book"></i>
-<i class="fa-sharp fa-solid fa-lightbulb"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-sharp fa-solid fa-binary"></i>
-<i class="fa-solid fa-handshake"></i>
-<i class="fa-solid fa-brackets-curly"></i>   
-</div>
-</div>
-<div class="row">
-<div>   
-<i class="fa-brands fa-github"></i>
-<i class="fa-solid fa-face-awesome"></i>
-<i class="fa-brands fa-google"></i>
-<i class="fa-brands fa-bootstrap"></i>
-<i class="fa-solid fa-computer-classic"></i>
-<i class="fa-solid fa-window"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-sharp fa-solid fa-people-group"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-microchip"></i>
-<i class="fa-solid fa-building-columns"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-java"></i>
-<i class="fa-solid fa-book"></i>
-<i class="fa-sharp fa-solid fa-lightbulb"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-sharp fa-solid fa-binary"></i>
-<i class="fa-solid fa-handshake"></i>
-<i class="fa-solid fa-brackets-curly"></i>
-</div>
-<div>
-<i class="fa-brands fa-github"></i>
-<i class="fa-solid fa-face-awesome"></i>
-<i class="fa-brands fa-google"></i>
-<i class="fa-brands fa-bootstrap"></i>
-<i class="fa-solid fa-computer-classic"></i>
-<i class="fa-solid fa-window"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-sharp fa-solid fa-people-group"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-microchip"></i>
-<i class="fa-solid fa-building-columns"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-java"></i>
-<i class="fa-solid fa-book"></i>
-<i class="fa-sharp fa-solid fa-lightbulb"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-sharp fa-solid fa-binary"></i>
-<i class="fa-solid fa-handshake"></i>
-<i class="fa-solid fa-brackets-curly"></i>   
-</div>
-</div>
-<div class="row">
-<div>   
-<i class="fa-brands fa-github"></i>
-<i class="fa-solid fa-face-awesome"></i>
-<i class="fa-brands fa-google"></i>
-<i class="fa-brands fa-bootstrap"></i>
-<i class="fa-solid fa-computer-classic"></i>
-<i class="fa-solid fa-window"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-sharp fa-solid fa-people-group"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-microchip"></i>
-<i class="fa-solid fa-building-columns"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-java"></i>
-<i class="fa-solid fa-book"></i>
-<i class="fa-sharp fa-solid fa-lightbulb"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-sharp fa-solid fa-binary"></i>
-<i class="fa-solid fa-handshake"></i>
-<i class="fa-solid fa-brackets-curly"></i>
-</div>
-<div>
-<i class="fa-brands fa-github"></i>
-<i class="fa-solid fa-face-awesome"></i>
-<i class="fa-brands fa-google"></i>
-<i class="fa-brands fa-bootstrap"></i>
-<i class="fa-solid fa-computer-classic"></i>
-<i class="fa-solid fa-window"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-sharp fa-solid fa-people-group"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-microchip"></i>
-<i class="fa-solid fa-building-columns"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-java"></i>
-<i class="fa-solid fa-book"></i>
-<i class="fa-sharp fa-solid fa-lightbulb"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-sharp fa-solid fa-binary"></i>
-<i class="fa-solid fa-handshake"></i>
-<i class="fa-solid fa-brackets-curly"></i>   
-</div>
-</div>
-<div class="row">
-<div>   
-<i class="fa-brands fa-github"></i>
-<i class="fa-solid fa-face-awesome"></i>
-<i class="fa-brands fa-google"></i>
-<i class="fa-brands fa-bootstrap"></i>
-<i class="fa-solid fa-computer-classic"></i>
-<i class="fa-solid fa-window"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-sharp fa-solid fa-people-group"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-microchip"></i>
-<i class="fa-solid fa-building-columns"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-java"></i>
-<i class="fa-solid fa-book"></i>
-<i class="fa-sharp fa-solid fa-lightbulb"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-sharp fa-solid fa-binary"></i>
-<i class="fa-solid fa-handshake"></i>
-<i class="fa-solid fa-brackets-curly"></i>
-</div>
-<div>
-<i class="fa-brands fa-github"></i>
-<i class="fa-solid fa-face-awesome"></i>
-<i class="fa-brands fa-google"></i>
-<i class="fa-brands fa-bootstrap"></i>
-<i class="fa-solid fa-computer-classic"></i>
-<i class="fa-solid fa-window"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-sharp fa-solid fa-people-group"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-microchip"></i>
-<i class="fa-solid fa-building-columns"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-java"></i>
-<i class="fa-solid fa-book"></i>
-<i class="fa-sharp fa-solid fa-lightbulb"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-sharp fa-solid fa-binary"></i>
-<i class="fa-solid fa-handshake"></i>
-<i class="fa-solid fa-brackets-curly"></i>   
-</div>
-</div>
-<div class="row">
-<div>   
-<i class="fa-brands fa-github"></i>
-<i class="fa-solid fa-face-awesome"></i>
-<i class="fa-brands fa-google"></i>
-<i class="fa-brands fa-bootstrap"></i>
-<i class="fa-solid fa-computer-classic"></i>
-<i class="fa-solid fa-window"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-sharp fa-solid fa-people-group"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-microchip"></i>
-<i class="fa-solid fa-building-columns"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-java"></i>
-<i class="fa-solid fa-book"></i>
-<i class="fa-sharp fa-solid fa-lightbulb"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-sharp fa-solid fa-binary"></i>
-<i class="fa-solid fa-handshake"></i>
-<i class="fa-solid fa-brackets-curly"></i>
-</div>
-<div>
-<i class="fa-brands fa-github"></i>
-<i class="fa-solid fa-face-awesome"></i>
-<i class="fa-brands fa-google"></i>
-<i class="fa-brands fa-bootstrap"></i>
-<i class="fa-solid fa-computer-classic"></i>
-<i class="fa-solid fa-window"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-sharp fa-solid fa-people-group"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-microchip"></i>
-<i class="fa-solid fa-building-columns"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-java"></i>
-<i class="fa-solid fa-book"></i>
-<i class="fa-sharp fa-solid fa-lightbulb"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-sharp fa-solid fa-binary"></i>
-<i class="fa-solid fa-handshake"></i>
-<i class="fa-solid fa-brackets-curly"></i>   
-</div>
-</div>
-<div class="row">
-<div>   
-<i class="fa-brands fa-github"></i>
-<i class="fa-solid fa-face-awesome"></i>
-<i class="fa-brands fa-google"></i>
-<i class="fa-brands fa-bootstrap"></i>
-<i class="fa-solid fa-computer-classic"></i>
-<i class="fa-solid fa-window"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-sharp fa-solid fa-people-group"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-microchip"></i>
-<i class="fa-solid fa-building-columns"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-java"></i>
-<i class="fa-solid fa-book"></i>
-<i class="fa-sharp fa-solid fa-lightbulb"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-sharp fa-solid fa-binary"></i>
-<i class="fa-solid fa-handshake"></i>
-<i class="fa-solid fa-brackets-curly"></i>
-</div>
-<div>
-<i class="fa-brands fa-github"></i>
-<i class="fa-solid fa-face-awesome"></i>
-<i class="fa-brands fa-google"></i>
-<i class="fa-brands fa-bootstrap"></i>
-<i class="fa-solid fa-computer-classic"></i>
-<i class="fa-solid fa-window"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-sharp fa-solid fa-people-group"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-microchip"></i>
-<i class="fa-solid fa-building-columns"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-java"></i>
-<i class="fa-solid fa-book"></i>
-<i class="fa-sharp fa-solid fa-lightbulb"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-sharp fa-solid fa-binary"></i>
-<i class="fa-solid fa-handshake"></i>
-<i class="fa-solid fa-brackets-curly"></i>   
-</div>
-</div>
-<div class="row">
-<div>   
-<i class="fa-brands fa-github"></i>
-<i class="fa-solid fa-face-awesome"></i>
-<i class="fa-brands fa-google"></i>
-<i class="fa-brands fa-bootstrap"></i>
-<i class="fa-solid fa-computer-classic"></i>
-<i class="fa-solid fa-window"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-sharp fa-solid fa-people-group"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-microchip"></i>
-<i class="fa-solid fa-building-columns"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-java"></i>
-<i class="fa-solid fa-book"></i>
-<i class="fa-sharp fa-solid fa-lightbulb"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-sharp fa-solid fa-binary"></i>
-<i class="fa-solid fa-handshake"></i>
-<i class="fa-solid fa-brackets-curly"></i>
-</div>
-<div>
-<i class="fa-brands fa-github"></i>
-<i class="fa-solid fa-face-awesome"></i>
-<i class="fa-brands fa-google"></i>
-<i class="fa-brands fa-bootstrap"></i>
-<i class="fa-solid fa-computer-classic"></i>
-<i class="fa-solid fa-window"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-sharp fa-solid fa-people-group"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-microchip"></i>
-<i class="fa-solid fa-building-columns"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-java"></i>
-<i class="fa-solid fa-book"></i>
-<i class="fa-sharp fa-solid fa-lightbulb"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-sharp fa-solid fa-binary"></i>
-<i class="fa-solid fa-handshake"></i>
-<i class="fa-solid fa-brackets-curly"></i>   
-</div>
-</div>
-<div class="row">
-<div>   
-<i class="fa-brands fa-github"></i>
-<i class="fa-solid fa-face-awesome"></i>
-<i class="fa-brands fa-google"></i>
-<i class="fa-brands fa-bootstrap"></i>
-<i class="fa-solid fa-computer-classic"></i>
-<i class="fa-solid fa-window"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-sharp fa-solid fa-people-group"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-microchip"></i>
-<i class="fa-solid fa-building-columns"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-java"></i>
-<i class="fa-solid fa-book"></i>
-<i class="fa-sharp fa-solid fa-lightbulb"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-sharp fa-solid fa-binary"></i>
-<i class="fa-solid fa-handshake"></i>
-<i class="fa-solid fa-brackets-curly"></i>
-</div>
-<div>
-<i class="fa-brands fa-github"></i>
-<i class="fa-solid fa-face-awesome"></i>
-<i class="fa-brands fa-google"></i>
-<i class="fa-brands fa-bootstrap"></i>
-<i class="fa-solid fa-computer-classic"></i>
-<i class="fa-solid fa-window"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-sharp fa-solid fa-people-group"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-microchip"></i>
-<i class="fa-solid fa-building-columns"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-java"></i>
-<i class="fa-solid fa-book"></i>
-<i class="fa-sharp fa-solid fa-lightbulb"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-sharp fa-solid fa-binary"></i>
-<i class="fa-solid fa-handshake"></i>
-<i class="fa-solid fa-brackets-curly"></i>   
-</div>
-</div>
-<div class="row">
-<div>   
-<i class="fa-brands fa-github"></i>
-<i class="fa-solid fa-face-awesome"></i>
-<i class="fa-brands fa-google"></i>
-<i class="fa-brands fa-bootstrap"></i>
-<i class="fa-solid fa-computer-classic"></i>
-<i class="fa-solid fa-window"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-sharp fa-solid fa-people-group"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-microchip"></i>
-<i class="fa-solid fa-building-columns"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-java"></i>
-<i class="fa-solid fa-book"></i>
-<i class="fa-sharp fa-solid fa-lightbulb"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-sharp fa-solid fa-binary"></i>
-<i class="fa-solid fa-handshake"></i>
-<i class="fa-solid fa-brackets-curly"></i>
-</div>
-<div>
-<i class="fa-brands fa-github"></i>
-<i class="fa-solid fa-face-awesome"></i>
-<i class="fa-brands fa-google"></i>
-<i class="fa-brands fa-bootstrap"></i>
-<i class="fa-solid fa-computer-classic"></i>
-<i class="fa-solid fa-window"></i>
-<i class="fa-solid fa-code"></i>
-<i class="fa-sharp fa-solid fa-people-group"></i>
-<i class="fa-brands fa-python"></i>
-<i class="fa-solid fa-microchip"></i>
-<i class="fa-solid fa-building-columns"></i>
-<i class="fa-brands fa-twitter"></i>
-<i class="fa-brands fa-html5"></i>
-<i class="fa-brands fa-java"></i>
-<i class="fa-solid fa-book"></i>
-<i class="fa-sharp fa-solid fa-lightbulb"></i>
-<i class="fa-brands fa-microsoft"></i>
-<i class="fa-sharp fa-solid fa-binary"></i>
-<i class="fa-solid fa-handshake"></i>
-<i class="fa-solid fa-brackets-curly"></i>   
-</div>
-</div>
-</section>
+    </div>
+    <hr>
+   
+
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+
+    
+<footer class="footer-dark bd-footer" >
+    <!-- Footer -->
+              <div class="row">
+                  <div class="col-sm-6 col-md-3 item" style="padding-left:60px">
+                      <h3>Elect Chairperson : Sanskruti Pagare</h3>
+                      <ul>
+                          <li style="padding-left:0px">Contact No.: (+91) 86238 12738 </li>
+                          <li style="padding-left:0px">Email id : Sanskrutipagare@gmail.com </li>
+                          
+                      </ul>
+                  </div>
+                  <div class="col-sm-6 col-md-3 item">
+                      <h3> Current Chairperson : Mansi Kortikar</h3>
+                      <ul>
+                          <li style="padding-left:0px"> Contact No.: (+91) 93220 93571 </li>
+                          <li style="padding-left:0px">Email id : Mansikortikar@gmail.com </li>
+                          
+                      </ul>
+                  </div>
+                  
+                  <div class="col-sm-2 col-md-2 item">
+                    <h3> Latest News </h3>
+                    <ul>
+                        <li style="padding-left:0px"> AMETHYST </li>
+                        <li style="padding-left:0px"> Coming Soon...</a></a></li>
+                    </ul>
+                    </div>
+                    
+                  <div class="col-sm-3 col-md-3 item">
+                    <div class="  text-center ">
+                        SNDT ACM © 2022
+                         <a  href="#"> Sndtacm.com</a>
+                       </div>
+                       </div>
+                   
+                      
+                       <div class="col-sm-6 col-md-3 item">
+                        <div>
+                          <a href="" class="me-4 text-reset">
+                            <i class="fab fa-facebook-f"></i>
+                          </a>
+                          <a href="" class="me-4 text-reset">
+                            <i class="fab fa-twitter"></i>
+                          </a>
+                          <a href="" class="me-4 text-reset">
+                            <i class="fab fa-google"></i>
+                          </a>
+                          <a href="" class="me-4 text-reset">
+                            <i class="fab fa-instagram"></i>
+                          </a>
+                          <a href="" class="me-4 text-reset">
+                            <i class="fab fa-linkedin"></i>
+                          </a>
+                          <a href="" class="me-4 text-reset">
+                            <i class="fab fa-github"></i>
+                          </a>
+                        </div>
+                        </div>
+                        
+              </footer>
+            </section>
+     
+    
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed(".auto-type",{
+          strings:[ " IS BEST WHEN IT BRINGS WITH PEOPLE TOGETHER",
+          " IS A USEFUL SERVANT BUT A DANGEROUS MASTER" ],
+          typeSpeed:150,
+          backSpeed:150,
+          loop:true
+          })
+  </script>
+
+  </body>
+</html>
